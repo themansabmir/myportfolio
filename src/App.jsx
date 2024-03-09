@@ -283,7 +283,7 @@ function App() {
 
 
         */}
-          <section className='min-h-screen relative bg-creamBg sm:rounded-t-[20%] w-full pb-20'>
+          <section className='min-h-screen relative bg-butterscoth sm:rounded-t-[20%] w-full pb-20'>
             <h2 className='text-center pt-20 text-hoverYellow font-semibold text-xl flex justify-center items-center'>
               <span className='rotateObj'>
                 <svg
@@ -338,7 +338,7 @@ function App() {
 
         */}
 
-          <section className='min-h-screen bg-[#f8dbc1]'>
+          <section className='min-h-screen bg-creamBg pb-20'>
             <div>
               <h2 className='text-center pt-20 text-hoverYellow font-semibold text-xl flex justify-center items-center'>
                 <span className='rotateObj'>
@@ -384,14 +384,15 @@ function App() {
               </svg>
             </div>
 
-            <div className='grid grid-cols-3 mt-10 w-10/12 mx-auto '>
+            <div className='grid grid-cols-1 sm:grid-cols-3 mt-10 w-10/12 mx-auto space-y-5 '>
               {servicesCard.map((item, i) => {
-                const { title, description, background_color } = item;
+                const { title, description, background_color, img } = item;
 
                 return (
                   <div key={i} className='mr-5'>
                     <ServiceCard
                       title={title}
+                      img={img}
                       description={description}
                       bgColor={background_color}
                     />

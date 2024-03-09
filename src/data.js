@@ -1,6 +1,12 @@
 import Azilure from "./assets/azilureReal.png";
 import Alcanes from "./assets/alcanes.png";
 import PicArtJoy from "./assets/picartjoy.png";
+import webApps from "./assets/webapps.jpg";
+import mobileApps from "./assets/mobileapps.jpg";
+import seo from "./assets/seo.jpg";
+import cms from "./assets/cns.jpg";
+import maintenance from "./assets/maintenance.jpg";
+import uiux from "./assets/uiux.jpg";
 
 export const cards = [
   {
@@ -87,43 +93,47 @@ export const workCycle = [
   },
 ];
 
-
-
 export const servicesCard = [
   {
     title: "UI/UX Design",
     description:
       "Crafting intuitive and engaging user interfaces with a focus on user experience.",
-    background_color: "#3498db",
+    background_color: "#fee7fe",
+    img: uiux,
   },
   {
     title: "Content Management System",
     description:
       "Empowering your digital presence with robust and scalable content management solutions.",
-    background_color: "#2ecc71",
+    background_color: "#f1efe1",
+    img: cms,
   },
   {
     title: "Web Applications",
     description:
       "Developing dynamic and interactive web applications tailored to your business needs.",
-    background_color: "#9b59b6",
+    background_color: "#d4effa",
+    img: webApps,
   },
   {
     title: "Mobile Applications",
     description:
       "Creating innovative and user-friendly mobile applications for iOS and Android platforms.",
     background_color: "#f39c12",
+    img: mobileApps,
   },
   {
     title: "Maintenance & Support",
     description:
       "Providing ongoing maintenance and support services to ensure your digital assets run smoothly.",
     background_color: "#e74c3c",
+    img:maintenance
   },
   {
     title: "Search Engine Optimization (SEO)",
     description:
       "Enhancing your online visibility and driving organic traffic to your website through strategic SEO practices.",
     background_color: "#34495e",
+    img:seo
   },
 ];

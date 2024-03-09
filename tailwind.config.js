@@ -9,6 +9,7 @@ export default {
         fontPrimary: "#ffffff",
         fontPara: "#68727D",
         creamBg: "#f5f2eb",
+        butterscoth: "#f8dbc1",
       },
       fontFamily: {
         primaryFont: ["Manrope", "sans-serif"],
