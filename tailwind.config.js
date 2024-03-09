@@ -8,6 +8,7 @@ export default {
         hoverYellow: "#ff4500",
         fontPrimary: "#ffffff",
         fontPara: "#68727D",
+        creamBg: "#f5f2eb",
       },
       fontFamily: {
         primaryFont: ["Manrope", "sans-serif"],

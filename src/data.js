@@ -55,3 +55,75 @@ export const companyData = [
     jobMode: "Remote",
   },
 ];
+
+export const workCycle = [
+  {
+    card_number: 1,
+    title: "Explore & Understand",
+    image: "magnifying_glass.jpg",
+    description:
+      "We begin by delving into your project's intricacies. Through active listening and in-depth discussions, we explore your goals, target audience, and unique challenges. Understanding your vision is the compass guiding our journey.",
+  },
+  {
+    card_number: 2,
+    title: "Create & Refine",
+    image: "digital_tablet.jpg",
+    description:
+      "With insights gathered, our team sketches, prototypes, and refines ideas to craft solutions tailored to your needs. Collaboration and iteration define this phase, ensuring every pixel and line of code aligns with your objectives.",
+  },
+  {
+    card_number: 3,
+    title: "Implement & Assess",
+    image: "servers_and_gears.jpg",
+    description:
+      "As the designs take shape, we transition to implementation. We fine-tune every detail, ensuring a seamless experience for your users. Our focus remains on quality assurance and exceeding expectations.We ensure functionality & compatibility ",
+  },
+  {
+    card_number: 4,
+    title: "Deliver & Sustain",
+    image: "handshake.jpg",
+    description:
+      "Congratulations! Your project is now ready to shine. We deliver the final product, providing comprehensive support and documentation. Our commitment doesn't end here; we stand by you post-launch, ensuring smooth operations and addressing any queries or concerns that arise.",
+  },
+];
+
+
+
+export const servicesCard = [
+  {
+    title: "UI/UX Design",
+    description:
+      "Crafting intuitive and engaging user interfaces with a focus on user experience.",
+    background_color: "#3498db",
+  },
+  {
+    title: "Content Management System",
+    description:
+      "Empowering your digital presence with robust and scalable content management solutions.",
+    background_color: "#2ecc71",
+  },
+  {
+    title: "Web Applications",
+    description:
+      "Developing dynamic and interactive web applications tailored to your business needs.",
+    background_color: "#9b59b6",
+  },
+  {
+    title: "Mobile Applications",
+    description:
+      "Creating innovative and user-friendly mobile applications for iOS and Android platforms.",
+    background_color: "#f39c12",
+  },
+  {
+    title: "Maintenance & Support",
+    description:
+      "Providing ongoing maintenance and support services to ensure your digital assets run smoothly.",
+    background_color: "#e74c3c",
+  },
+  {
+    title: "Search Engine Optimization (SEO)",
+    description:
+      "Enhancing your online visibility and driving organic traffic to your website through strategic SEO practices.",
+    background_color: "#34495e",
+  },
+];
