@@ -243,7 +243,7 @@ function App() {
 
             {/* fixed nav links */}
             <div className='flex justify-center'>
-              <div className='flex fixed justify-center blurEffect bg-black bg-opacity-30 border border-lime-300    bottom-2  px-1 sm:px-4  py-2 sm:py-4 rounded-full  w-min z-30'>
+              <div className='flex fixed justify-center blurEffect bg-black bg-opacity-10 border  text-white    bottom-2  px-1 sm:px-4  py-2 sm:py-4 rounded-full  w-min z-30'>
                 <a
                   href='#work'
                   className='hover:bg-hoverYellow px-1 sm:px-4 py-1 rounded-3xl transition-all duration-500 hover:text-black font-semibold'
@@ -506,11 +506,11 @@ function App() {
                 </span>
                 Worried about technologies?
               </h2>
-              <h2 className='text-black font-bold text-[40px] sm:text-[50px] mt-10 w-11/12 sm:w-6/12 mx-auto text-center'>
+              <h2 className='text-black font-bold text-[40px] sm:text-[40px] mt-10 w-full sm:w-6/12 mx-auto text-center'>
                 Think of me as your tech genie,
                 <br /> here to grant your digital wishes!
               </h2>
-              <p className='text-black font-medium text-[16px] sm:text-[20px] mt-10 w-11/12 sm:w-6/12 mx-auto text-center '>
+              <p className='text-black font-medium text-[16px] sm:text-[18px] mt-10 w-11/12 sm:w-6/12 mx-auto text-center '>
                 Whether you're a bustling agency, a visionary founder, or a
                 thriving startup,
                 <br /> I've got the skills and expertise to bring your ideas to
@@ -669,35 +669,54 @@ function App() {
 
         */}
           <div
-            className='min-h-screen grid grid-cols-1 text-center md:text-left md:grid-cols-2 place-content-center w-full'
+            className='   text-black bg-[#eaeaea]  py-20 px-10 mx-auto   text-center md:text-left w-full'
             id='contact'
           >
-            <div className='text-[80px] md:ml-20  font-medium leading-tight w-full '>
-              {" "}
-              <h1 className=' opacity-70'>Get in </h1>
-              <h1>Touch</h1>
-              <a
-                href='mailto:mansabmirsde@gmail.com'
-                className='text-lg hover:text-hoverYellow transition-all duration-300 hover:underline'
-              >
-                mansabmirsde@gmail.com
-              </a>
+            <div className='grid grid-cols-3 place-content-evenly text-center'>
+              <div>
+                <h1 className='text-3xl font-semibold'>Get In Touch</h1>
+                <p className='text-justify text-gray-500 mt-4 font-medium'>
+                  Let's connect for projects, design, advice, or maybe just to
+                  say a hello.
+                </p>
+              </div>
+              <div className=''>
+                <h1 className='text-3xl font-semibold'>Say Hello!</h1>
+                <div className='flex flex-col gap-4 mt-4 font-medium items-center'>
+                  <a
+                    href='https://www.linkedin.com/in/themansabmir/'
+                    target='_blank'
+                    className='text-gray-500 text-xl hover:text-hoverYellow hover:underline'
+                    rel='noopener noreferrer'
+                  >
+                    Linkedin
+                  </a>
+                  <a
+                    href='https://www.linkedin.com/in/themansabmir/'
+                    target='_blank'
+                    className='text-gray-500 text-xl hover:text-hoverYellow hover:underline'
+                    rel='noopener noreferrer'
+                  >
+                    Github
+                  </a>
+                </div>
+              </div>
+              <div>
+                <h1 className='text-3xl font-semibold text-black'>
+                  In Hurry? Drop an email
+                </h1>
+                <div>
+                  <a
+                    href='mailto:mansabmirsde@gmail.com'
+                    className='text-gray-500 font-semibold mt-4 text-xl hover:text-hoverYellow hover:underline'
+                  >
+                    mansabmirsde@gmail.com
+                  </a>
+                </div>
+              </div>
             </div>
-            <div className='w-full text-[80px] md:text-[80px] '>
-              <h1 className='hover:text-hoverYellow hover:underline transition-all duration-500 cursor-pointer'>
-                <a href='https://github.com/themansabmir/' target='_blank'>
-                  GITHUB
-                </a>
-              </h1>
-              <h1 className='hover:text-hoverYellow hover:underline transition-all duration-500 cursor-pointer'>
-                <a
-                  href='https://www.linkedin.com/in/themansabmir/'
-                  target='_blank'
-                >
-                  LINKEDIN
-                </a>
-              </h1>
-            </div>
+
+
           </div>
         </div>
       </main>
