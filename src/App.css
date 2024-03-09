@@ -81,7 +81,19 @@
     transform: rotate(360deg) scale(1);
   }
 }
+.moveLeft{
+  animation: animateLeft 15s linear infinite  ;
+}
 
+
+@keyframes  animateLeft{
+  from {
+    transform:  translateX( 0%);
+  }
+  to{
+    transform:  translateX(-100%);
+  }
+}
 .rotateObj  {
   animation: rotate 4s linear infinite forwards;
 }

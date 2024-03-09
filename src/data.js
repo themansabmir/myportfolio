@@ -137,3 +137,8 @@ export const servicesCard = [
     img:seo
   },
 ];
+
+
+
+export const skillsString =
+  "HTML, CSS, Tailwind, JavaScript, ReactJS, Next.js, AngularJS, Vue.js, TypeScript, Node.js, MongoDB, SQL, PostgreSQL, Firebase, Redis, Java, Spring Boot, NestJS, Docker";

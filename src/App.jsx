@@ -2,7 +2,13 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./App.css";
 import React, { useEffect, useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
-import { cards, companyData, servicesCard, workCycle } from "./data";
+import {
+  cards,
+  companyData,
+  servicesCard,
+  skillsString,
+  workCycle,
+} from "./data";
 import lottie from "lottie-web";
 import HTML from "./assets/html.png";
 import CSS from "./assets/css.png";
@@ -479,75 +485,91 @@ function App() {
 
         */}
 
-          <div id='skills' className='min-h-screen mb-20 mx-10 sm:mx-3'>
+          <div id='skills' className='min-h-screen mb-20   sm:mx-3'>
             <div>
-              <div className='text-[70px] text-wrap sm:text-[80px] font-medium leading-tight'>
-                {" "}
-                <h1 className=' opacity-70'>My</h1>
-                <h1>Skillset</h1>
-              </div>
-              <div className='grid  '>
-                <div className='flex justify-start sm:justify-around '>
-                  <img
-                    src={HTML}
-                    alt=''
-                    className='h-28 sm:h-32 relative aspect-square   movewithmouse transition-all duration-300'
-                  />
-                  <img
-                    src={CSS}
-                    alt=''
-                    className='h-28 sm:h-32 aspect-square  relative movewithmouse'
-                  />
-                  <img
-                    src={REACTJS}
-                    alt=''
-                    className='h-28 sm:h-32 aspect-square rounded-full relative movewithmouse'
-                  />
-                </div>
-                <div className='flex  justify-between flex-wrap sm:justify-between '>
-                  <img
-                    src={JAVASCRIPT}
-                    alt=''
-                    className='h-28 sm:h-32 rounded-full aspect-square relative movewithmouse'
-                  />
-                  <img
-                    src={NODEJS}
-                    alt=''
-                    className='h-28 sm:h-32 rounded-full aspect-square relative movewithmouse'
-                  />
-                  <img
-                    src={PHP}
-                    alt=''
-                    className='h-28 sm:h-32 aspect-square  relative movewithmouse'
-                  />
-                  <img
-                    src={SQL}
-                    alt=''
-                    className='h-28 sm:h-32 aspect-square relative movewithmouse'
-                  />
-                  <img
-                    src={TAILWIND}
-                    alt=''
-                    className='h-28 sm:h-32 aspect-square rounded-full relative movewithmouse'
-                  />
-                </div>
-                <div className='flex justify-around '>
-                  <img
-                    src={JAVA}
-                    alt=''
-                    className='h-28 sm:h-32 aspect-square relative movewithmouse'
-                  />
-                  <img
-                    src={MONGO}
-                    alt=''
-                    className='h-28 sm:h-32 aspect-square relative movewithmouse'
-                  />
-                  <img
-                    src={SPRINGBOOT}
-                    alt=''
-                    className='h-28 sm:h-32 aspect-square rounded-full relative movewithmouse'
-                  />
-                </div>
+              <h2 className='text-center pt-20 text-hoverYellow font-semibold text-xl flex justify-center items-center'>
+                <span className='rotateObj'>
+                  <svg
+                    className='rotate'
+                    width='20'
+                    height='20'
+                    viewBox='0 0 17 16'
+                    fill='none'
+                    xmlns='http://www.w3.org/2000/svg'
+                  >
+                    <path
+                      d='M6.62533 14.4818L6.60649 15H7.125H9.375H9.89351L9.87467 14.4818L9.72169 10.2748L13.279 12.5316L13.7212 12.8121L13.981 12.3574L15.106 10.3887L15.364 9.93717L14.9027 9.69709L11.1612 7.75L14.9027 5.80291L15.364 5.56283L15.106 5.1113L13.981 3.14256L13.7212 2.6879L13.279 2.96842L9.72169 5.22523L9.87467 1.01817L9.89351 0.5H9.375H7.125H6.60649L6.62533 1.01817L6.77831 5.22523L3.22097 2.96842L2.7788 2.6879L2.519 3.14256L1.394 5.1113L1.13599 5.56283L1.59731 5.80291L5.33877 7.75L1.59731 9.69709L1.13599 9.93717L1.394 10.3887L2.519 12.3574L2.7788 12.8121L3.22098 12.5316L6.77831 10.2748L6.62533 14.4818Z'
+                      fill='#FF4903'
+                      stroke='#FF4903'
+                    />
+                  </svg>
+                </span>
+                Worried about technologies?
+              </h2>
+              <h2 className='text-black font-bold text-[40px] sm:text-[50px] mt-10 w-11/12 sm:w-6/12 mx-auto text-center'>
+                Think of me as your tech genie,
+                <br /> here to grant your digital wishes!
+              </h2>
+              <p className='text-black font-medium text-[16px] sm:text-[20px] mt-10 w-11/12 sm:w-6/12 mx-auto text-center '>
+                Whether you're a bustling agency, a visionary founder, or a
+                thriving startup,
+                <br /> I've got the skills and expertise to bring your ideas to
+                life. <br />
+              </p>
+              <p className='mt-10 text-black text-center font-semibold text-[16px] sm:text-[20px]'>
+                Don't fret; I've got you covered. <br /> Here's a breakdown of
+                what I bring to the table.
+              </p>
+            </div>
+
+            <div className='relative  bottom-0 text-creamBg bg-black mt-40  text-[50px] gap-10 overflow-x-hidden'>
+              <div className='moveLeft  flex  items-center h-full'>
+                {skillsString.split(",").map((skill, i) => {
+                  return (
+                    <h1 className='flex items-center ' key={i}>
+                      <span className='rotateObj mx-5'>
+                        <svg
+                          className='rotate'
+                          width='20'
+                          height='20'
+                          viewBox='0 0 17 16'
+                          fill='none'
+                          xmlns='http://www.w3.org/2000/svg'
+                        >
+                          <path
+                            d='M6.62533 14.4818L6.60649 15H7.125H9.375H9.89351L9.87467 14.4818L9.72169 10.2748L13.279 12.5316L13.7212 12.8121L13.981 12.3574L15.106 10.3887L15.364 9.93717L14.9027 9.69709L11.1612 7.75L14.9027 5.80291L15.364 5.56283L15.106 5.1113L13.981 3.14256L13.7212 2.6879L13.279 2.96842L9.72169 5.22523L9.87467 1.01817L9.89351 0.5H9.375H7.125H6.60649L6.62533 1.01817L6.77831 5.22523L3.22097 2.96842L2.7788 2.6879L2.519 3.14256L1.394 5.1113L1.13599 5.56283L1.59731 5.80291L5.33877 7.75L1.59731 9.69709L1.13599 9.93717L1.394 10.3887L2.519 12.3574L2.7788 12.8121L3.22098 12.5316L6.77831 10.2748L6.62533 14.4818Z'
+                            fill='#FF4903'
+                            stroke='#FF4903'
+                          />
+                        </svg>
+                      </span>
+                      {skill}
+                    </h1>
+                  );
+                })}
+                {skillsString.split(",").map((skill, i) => {
+                  return (
+                    <h1 className='flex items-center ' key={i}>
+                      <span className='rotateObj mx-5'>
+                        <svg
+                          className='rotate'
+                          width='20'
+                          height='20'
+                          viewBox='0 0 17 16'
+                          fill='none'
+                          xmlns='http://www.w3.org/2000/svg'
+                        >
+                          <path
+                            d='M6.62533 14.4818L6.60649 15H7.125H9.375H9.89351L9.87467 14.4818L9.72169 10.2748L13.279 12.5316L13.7212 12.8121L13.981 12.3574L15.106 10.3887L15.364 9.93717L14.9027 9.69709L11.1612 7.75L14.9027 5.80291L15.364 5.56283L15.106 5.1113L13.981 3.14256L13.7212 2.6879L13.279 2.96842L9.72169 5.22523L9.87467 1.01817L9.89351 0.5H9.375H7.125H6.60649L6.62533 1.01817L6.77831 5.22523L3.22097 2.96842L2.7788 2.6879L2.519 3.14256L1.394 5.1113L1.13599 5.56283L1.59731 5.80291L5.33877 7.75L1.59731 9.69709L1.13599 9.93717L1.394 10.3887L2.519 12.3574L2.7788 12.8121L3.22098 12.5316L6.77831 10.2748L6.62533 14.4818Z'
+                            fill='#FF4903'
+                            stroke='#FF4903'
+                          />
+                        </svg>
+                      </span>
+                      {skill}
+                    </h1>
+                  );
+                })}
               </div>
             </div>
           </div>
@@ -563,34 +585,37 @@ function App() {
 
         */}
 
-          <div id='experience' className='min-h-screen'>
-            <div className='text-[70px] ml-3 sm:text-[80px] font-medium leading-tight my-40 '>
-              {" "}
-              <h1 className=' opacity-70'>Experience</h1>
-              <h1>History</h1>
-            </div>
+          <div
+            id='experience'
+            className='min-h-screen bg-[#020232] pt-5  pb-16 rounded-b-[15%]'
+          >
+            <div className='mx-aut mx-2 sm:mx-10'>
+              <div className='text-[60px] sm:ml-3 sm:text-[80px] font-medium leading-tight my-40 '>
+                {" "}
+                <h1 className=' opacity-70'>Experience</h1>
+                <h1 className='flex'>History</h1>
+              </div>
 
-            {/*  experience cards */}
-            {companyData.map((item, i) => {
-              const { roleTitle, duration, jobMode, companyname } = item;
-              return (
-                <div
-                  className='flex  justify-between pb-10 ml-3 mb-10 border-b border-b-fontPara'
-                  key={i}
-                >
-                  <div>
-                    <h1 className='text-3xl md:text-5xl opacity-80 mb-8'>
-                      {roleTitle}
-                    </h1>
-                    <p>{companyname}</p>
+              {/*  experience cards */}
+              {companyData.map((item, i) => {
+                const { roleTitle, duration, jobMode, companyname } = item;
+                return (
+                  <div
+                    className='flex text-creamBg  cursor-pointer hover:scale-95 transition-all duration-500 justify-between pb-10 ml-3 mb-10 border-b border-b-fontPara'
+                    key={i}
+                  >
+                    <div>
+                      <h1 className='text-xl md:text-5xl  mb-8'>{roleTitle}</h1>
+                      <p>{companyname}</p>
+                    </div>
+                    <div className='text-white text-sm md:text-lg font-semibold'>
+                      <p>{duration}</p>
+                      <p>{jobMode}</p>
+                    </div>
                   </div>
-                  <div className='text-fontPara text-base md:text-lg'>
-                    <p>{duration}</p>
-                    <p>{jobMode}</p>
-                  </div>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
 
           {/*
@@ -604,8 +629,8 @@ function App() {
 
         */}
 
-          <div className='min-h-screen w-full px-4 sm:mx-0'>
-            <h4 className=' max-w-[100%] sm:max-w-[30%] text-justify text-lg   md:text-2xl font-extralight'>
+          <div className='min-h-screen w-full px-4 bg-[#ffffff] py-20 text-black sm:mx-0'>
+            <h4 className=' max-w-[100%] sm:max-w-[30%] text-justify text-lg   md:text-2xl font-medium'>
               Over the years, I've honed my skills in a variety of programming
               languages and frameworks, always striving to stay on the cutting
               edge of web development technologies. My work is driven by a keen
@@ -613,7 +638,7 @@ function App() {
               user-friendly experiences. Whether it's building a dynamic website
               or optimizing an app for performance
             </h4>
-            <div className='uppercase aboutMeContainer grid place-content-center text-[60px] md:text-[120px] italic font-bold'>
+            <div className='uppercase aboutMeContainer grid place-content-center text-[60px] md:text-[120px] text-hoverYellow italic font-bold'>
               {["Creative", "Fullstack", "Developer"].map((item, i) => {
                 return (
                   <h1 key={i} className='aboutmeChild'>
@@ -622,7 +647,7 @@ function App() {
                 );
               })}
             </div>
-            <h4 className='ml-auto max-w-[100%] sm:max-w-[30%] text-justify text-lg   md:text-2xl  text-2xl font-extralight'>
+            <h4 className='ml-auto max-w-[100%] sm:max-w-[30%] text-justify text-lg   md:text-2xl  text-2xl font-medium'>
               My journey as a developer has been marked by countless late-night
               coding sessions, debugging marathons, and those "aha" moments when
               everything falls into place. I'm passionate about crafting
