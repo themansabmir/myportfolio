@@ -1,7 +1,11 @@
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import "./App.css";
-import React, { useEffect, useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import lottie from "lottie-web";
+import React, { useLayoutEffect, useRef } from "react";
+import "./App.css";
+import { ServiceCard } from "./ServiceCard";
+import { WorkCard } from "./WorkCard";
+import jsonFile from "./assets/lottie.json";
 import {
   cards,
   companyData,
@@ -9,23 +13,7 @@ import {
   skillsString,
   workCycle,
 } from "./data";
-import lottie from "lottie-web";
-import HTML from "./assets/html.png";
-import CSS from "./assets/css.png";
-import TAILWIND from "./assets/tailwind.png";
-import NODEJS from "./assets/nodejs.png";
-import JAVASCRIPT from "./assets/javascript.png";
-import MONGO from "./assets/mongo.png";
-import PHP from "./assets/php.png";
-import REACTJS from "./assets/reactjs.png";
-import SQL from "./assets/sql.png";
-import JAVA from "./assets/java.png";
-import SPRINGBOOT from "./assets/springboot.png";
 import { useScreenSize } from "./useScreen";
-import jsonFile from "./assets/lottie.json";
-import { WorkCard } from "./WorkCard";
-import Logo from "./assets/logo.svg";
-import { ServiceCard } from "./ServiceCard";
 // registering plugins for gsap
 gsap.registerPlugin(ScrollTrigger);
 
@@ -672,7 +660,7 @@ function App() {
             className='   text-black bg-[#eaeaea]  py-20 px-10 mx-auto   text-center md:text-left w-full'
             id='contact'
           >
-            <div className='grid grid-cols-3 place-content-evenly text-center'>
+            <div className='grid grid-cols-1 sm:grid-cols-3 place-content-evenly text-center'>
               <div>
                 <h1 className='text-3xl font-semibold'>Get In Touch</h1>
                 <p className='text-justify text-gray-500 mt-4 font-medium'>
